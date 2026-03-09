@@ -1,0 +1,15 @@
+# セッション状態（頻繁に変更されるため、各自のローカルで管理）
+state/session.json
+state/error_log.json
+state/agents_used.json
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
