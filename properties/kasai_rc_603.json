@@ -1,0 +1,95 @@
+{
+  "id": "kasai_rc_603",
+  "name": "葛西マンション603",
+
+  "basic": {
+    "location": "江戸川区南葛西二丁目18-11-603",
+    "structure": "RC造（鉄筋コンクリート造）",
+    "age_at_purchase": 25,
+    "purchase_date": "2025-11-28",
+    "exclusive_area_sqm": 68.42,
+    "registered_area_sqm": 81.88
+  },
+
+  "acquisition": {
+    "purchase_price": 34000000,
+    "down_payment": 500000,
+    "loan_amount": 33500000,
+    "brokerage_fee": 1100000,
+    "registration_fee": 300000,
+    "other_costs": 500000,
+    "fire_insurance_5yr": 100000
+  },
+
+  "loan": {
+    "amount": 33500000,
+    "interest_rate": 0.0225,
+    "rate_type": "variable",
+    "term_years": 35,
+    "monthly_payment": 115000,
+    "repayment_method": "元利均等返済"
+  },
+
+  "income": {
+    "monthly_rent": 155000,
+    "annual_rent": 1860000
+  },
+
+  "expenses_monthly": {
+    "management_and_repair": 30000,
+    "rental_management_fee": 2500,
+    "loan_payment": 115000,
+    "total": 147500
+  },
+
+  "expenses_annual": {
+    "management_and_repair": 360000,
+    "rental_management_fee": 30000,
+    "loan_payment": 1380000,
+    "property_tax_total": 234845,
+    "time_cost": 20000,
+    "total": 2024845
+  },
+
+  "property_tax": {
+    "land": {
+      "assessed_value": 12034240,
+      "taxable_value": 1476108,
+      "fixed_asset_tax": 120673,
+      "city_planning_tax": 4429,
+      "subtotal": 125102
+    },
+    "building": {
+      "assessed_value": 6455500,
+      "taxable_value": 6455500,
+      "fixed_asset_tax": 90377,
+      "city_planning_tax": 19366,
+      "subtotal": 109743
+    },
+    "total": 234845
+  },
+
+  "depreciation": {
+    "building_acquisition_cost": 11866000,
+    "building_ratio": 0.349,
+    "legal_useful_life": 47,
+    "remaining_useful_life": 27,
+    "depreciation_rate": 0.037,
+    "annual_depreciation": 439042
+  },
+
+  "tax_calculation": {
+    "income": {
+      "annual_rent": 1860000
+    },
+    "deductible_expenses": {
+      "management_and_repair": 360000,
+      "rental_management_fee": 30000,
+      "property_tax": 234845,
+      "depreciation": 439042,
+      "loan_interest_year1_approx": 750000
+    },
+    "total_expenses": 1813887,
+    "real_estate_income": 46113
+  }
+}

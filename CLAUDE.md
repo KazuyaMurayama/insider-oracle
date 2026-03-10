@@ -356,6 +356,11 @@ CLAUDE.md内にデータを重複させず、**常に最新のknowledgeファイ
 ※ 経費カテゴリの詳細は `knowledge/tax/expense_catalog.md` を参照
 ※ デッドクロス計算は `knowledge/realestate/dead_cross_model.md` を参照
 
+### ユーザー保有物件データ
+- **一覧**: `properties/index.json`（物件ID・名前・所在地のみ。まずこれを読む）
+- **詳細**: `properties/{物件ID}.json`（収支・ローン・税務データ。必要時のみ読む）
+- シミュレーションや質問に物件名が含まれる場合、該当JSONを自動参照する
+
 ---
 
 ## 品質基準

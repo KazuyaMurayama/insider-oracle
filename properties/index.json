@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "id": "kasai_rc_603",
+      "name": "葛西マンション603",
+      "location": "江戸川区南葛西二丁目18-11-603",
+      "structure": "RC",
+      "purchase_date": "2025-11-28",
+      "purchase_price": 34000000,
+      "file": "kasai_rc_603.json"
+    }
+  ]
+}
