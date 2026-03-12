@@ -27,8 +27,7 @@
 
 国税庁の公式ページから PDF を入手できます：
 
-**国税庁「所得税の青色申告承認申請書」のページ**
-https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/09.htm
+**[国税庁「所得税の青色申告承認申請書」のページ](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/09.htm)**
 
 → ページ内の「申請書様式」のPDFリンクからダウンロード → 印刷
 
@@ -36,8 +35,7 @@ https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/09.htm
 
 e-Taxなら印刷・郵送不要でそのまま提出できます：
 
-**e-Tax ソフト（WEB版）**
-https://www.e-tax.nta.go.jp/
+**[e-Tax ソフト（WEB版）](https://www.e-tax.nta.go.jp/)**
 
 → ログイン → 「申告・申請・納税」→「操作に進む」→「申請・届出」→「所得税の青色申告承認申請」
 
@@ -52,8 +50,7 @@ https://www.e-tax.nta.go.jp/
 - 電話: 03-3683-4281
 - 受付時間: 平日 8:30〜17:00
 
-**管轄の税務署を調べる（国税庁）**
-https://www.nta.go.jp/about/organization/access/map.htm
+**[管轄の税務署を調べる（国税庁）](https://www.nta.go.jp/about/organization/access/map.htm)**
 
 ---
 
@@ -88,9 +85,7 @@ https://www.nta.go.jp/about/organization/access/map.htm
 
 ### 記入例のイメージ（国税庁の記載例）
 
-**国税庁 記載例PDF**
-https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/09.htm
-→ ページ内の「記載要領」で書き方の見本が見られます
+**[国税庁 記載例PDF](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/09.htm)** → ページ内の「記載要領」で書き方の見本が見られます
 
 ---
 
@@ -125,8 +120,7 @@ e-Tax なら **3/16の23:59まで** 提出可能です。
 3. 画面の指示に従って入力
 4. 送信 → 完了
 
-**e-Tax ログイン**
-https://www.e-tax.nta.go.jp/
+**[e-Tax ログイン](https://www.e-tax.nta.go.jp/)**
 
 ### 方法C: 税務署に直接持参
 
