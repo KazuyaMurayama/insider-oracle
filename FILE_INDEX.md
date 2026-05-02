@@ -1,96 +1,145 @@
-# FILE_INDEX.md — insider-oracle
+# FILE_INDEX — insider-oracle
 
-> **新セッション開始時に必ずこのファイルを読む。**
-> ファイル追加・削除・移動時は必ずこのファイルを更新すること。
-> 最終更新: 2026-04-30
+> ⚠️ このファイルは自動生成です。手動編集は次回更新で上書きされます。
 
-## 概要
-葛西ワンルーム不動産の確定申告・節税・青色申告対応マルチエージェントシステム。税務調査官・税理士・銀行員・大家の4エージェント構成。
-
-**スタック:** Markdown, JSON, PDF, CSV
-
----
-
-## 📋 最初に読むべきファイル
-
-| 優先度 | ファイル | 内容 |
-|---|---|---|
-| ★★★ | `CLAUDE.md` | 運用ルール・エージェント指針 |
-| ★★★ | `README.md` | システム概要・使い方 |
-| ★★★ | `agents/` | 4エージェント定義（必読） |
-| ★★ | `properties/kasai_rc_603.json` | 葛西物件マスターデータ |
-| ★★ | `outputs/` | 申告ガイド・節税戦略レポート |
+| 項目 | 値 |
+|---|---|
+| リポジトリ | KazuyaMurayama/insider-oracle |
+| ブランチ | main |
+| 総ファイル数 | 38 |
+| 最終更新 | 2026-05-02 |
+| 管理者 | 男座員也（Kazuya Oza） |
 
 ---
 
-## 🗂️ ディレクトリ構造
+## カテゴリ別サマリー
+
+| カテゴリ | ファイル数 |
+|---|---|
+| Documentation | 24 |
+| Data | 10 |
+| Config | 1 |
+| Other | 3 |
+
+---
+
+## ディレクトリ構成
 
 ```
-insider-oracle/
-├── CLAUDE.md                    ← 最重要ルール
-├── README.md
+.
 ├── agents/
-│   ├── agent_a_tax_inspector.md ← 税務調査官エージェント
-│   ├── agent_b_tax_accountant.md← 税理士エージェント
-│   ├── agent_c_bank_officer.md  ← 銀行員エージェント
-│   └── agent_d_landlord.md      ← 大家エージェント
+│   ├── agent_a_tax_inspector.md
+│   ├── agent_b_tax_accountant.md
+│   ├── agent_c_bank_officer.md
+│   └── agent_d_landlord.md
 ├── knowledge/
+│   ├── legal/
+│   │   └── .gitkeep
+│   ├── realestate/
+│   │   ├── dead_cross_model.md
+│   │   └── depreciation_guide.md
 │   ├── tax/
 │   │   ├── expense_catalog.md
 │   │   ├── investigation_cases.md
 │   │   ├── tax_rate_table.md
 │   │   └── tax_updates.md
-│   └── realestate/
-│       ├── dead_cross_model.md
-│       └── depreciation_guide.md
-├── properties/
-│   ├── index.json
-│   └── kasai_rc_603.json        ← 葛西物件マスター
-├── records/2026/                ← 2026年度経費記録
-│   ├── transport_log.csv
-│   ├── bank_fees_log.csv
-│   ├── supplies_log.csv
-│   ├── entertainment_log.csv
-│   ├── books_seminars_log.csv
-│   ├── depreciation_calculation_basis.md
-│   ├── home_office_basis.md
-│   └── property_visit_notes.md
+│   └── tech/
+│       └── .gitkeep
 ├── outputs/
+│   ├── .gitkeep
 │   ├── 20260310_kasai_2026_tax_filing_guide.md
 │   ├── 20260310_kasai_tax_saving_strategies.md
 │   ├── 20260311_blue_return_application_guide.md
 │   ├── 所得税の青色申告承認申請書.pdf
 │   └── 青色申告承認申請書_記入済み.pdf
-└── state/session.json
+├── properties/
+│   ├── index.json
+│   └── kasai_rc_603.json
+├── records/
+│   └── 2026/
+│       ├── bank_fees_log.csv
+│       ├── books_seminars_log.csv
+│       ├── depreciation_calculation_basis.md
+│       ├── entertainment_log.csv
+│       ├── home_office_basis.md
+│       ├── property_visit_notes.md
+│       ├── README.md
+│       ├── supplies_log.csv
+│       └── transport_log.csv
+├── state/
+│   ├── agents_used.json
+│   ├── error_log.json
+│   └── session.json
+├── .gitignore
+├── CLAUDE.md
+├── FILE_INDEX.md
+├── README.md
+├── tasks.md
+└── Timeout_Prevention.md
 ```
 
 ---
 
-## 📑 全ファイル一覧
+## ファイル詳細
 
-| パス | 種別 | 説明 |
+### Documentation (24件)
+
+| ファイル | サイズ | 説明 |
 |---|---|---|
-| `CLAUDE.md` | ドキュメント | 運用ルール・エージェント指針 |
-| `README.md` | ドキュメント | システム概要・使い方 |
-| `agents/agent_a_tax_inspector.md` | エージェント | 税務調査官エージェント定義 |
-| `agents/agent_b_tax_accountant.md` | エージェント | 税理士エージェント定義 |
-| `agents/agent_c_bank_officer.md` | エージェント | 銀行員エージェント定義 |
-| `agents/agent_d_landlord.md` | エージェント | 大家エージェント定義 |
-| `knowledge/tax/expense_catalog.md` | 知識 | 経費カタログ |
-| `knowledge/tax/tax_rate_table.md` | 知識 | 税率表 |
-| `knowledge/realestate/depreciation_guide.md` | 知識 | 減価償却ガイド |
-| `properties/kasai_rc_603.json` | データ | 葛西物件マスターデータ |
-| `records/2026/transport_log.csv` | データ | 2026年交通費ログ |
-| `records/2026/depreciation_calculation_basis.md` | ドキュメント | 減価償却計算根拠 |
-| `outputs/20260310_kasai_2026_tax_filing_guide.md` | レポート | 2026年確定申告ガイド |
-| `outputs/20260310_kasai_tax_saving_strategies.md` | レポート | 節税戦略レポート |
-| `outputs/20260311_blue_return_application_guide.md` | レポート | 青色申告承認申請ガイド |
-| `state/session.json` | データ | セッション状態 |
+| `agents/agent_a_tax_inspector.md` | 3.8 KB | Markdown ドキュメント |
+| `agents/agent_b_tax_accountant.md` | 3.9 KB | Markdown ドキュメント |
+| `agents/agent_c_bank_officer.md` | 4.0 KB | Markdown ドキュメント |
+| `agents/agent_d_landlord.md` | 4.2 KB | Markdown ドキュメント |
+| `CLAUDE.md` | 15.4 KB | Claude Code プロジェクト設定・命名ルール |
+| `FILE_INDEX.md` | 4.1 KB | （このファイル）全ファイルインデックス |
+| `knowledge/realestate/dead_cross_model.md` | 5.3 KB | Markdown ドキュメント |
+| `knowledge/realestate/depreciation_guide.md` | 1.4 KB | Markdown ドキュメント |
+| `knowledge/tax/expense_catalog.md` | 1.9 KB | Markdown ドキュメント |
+| `knowledge/tax/investigation_cases.md` | 560 B | Markdown ドキュメント |
+| `knowledge/tax/tax_rate_table.md` | 4.3 KB | Markdown ドキュメント |
+| `knowledge/tax/tax_updates.md` | 314 B | Markdown ドキュメント |
+| `outputs/20260310_kasai_2026_tax_filing_guide.md` | 2.5 KB | Markdown ドキュメント |
+| `outputs/20260310_kasai_tax_saving_strategies.md` | 2.0 KB | Markdown ドキュメント |
+| `outputs/20260311_blue_return_application_guide.md` | 6.4 KB | Markdown ドキュメント |
+| `outputs/所得税の青色申告承認申請書.pdf` | 514.6 KB | ファイル |
+| `outputs/青色申告承認申請書_記入済み.pdf` | 4.0 MB | ファイル |
+| `README.md` | 2.9 KB | リポジトリ概要・セットアップ手順 |
+| `records/2026/depreciation_calculation_basis.md` | 6.8 KB | Markdown ドキュメント |
+| `records/2026/home_office_basis.md` | 3.2 KB | Markdown ドキュメント |
+| `records/2026/property_visit_notes.md` | 4.8 KB | Markdown ドキュメント |
+| `records/2026/README.md` | 2.0 KB | リポジトリ概要・セットアップ手順 |
+| `tasks.md` | 1.2 KB | タスク管理・セッション履歴 |
+| `Timeout_Prevention.md` | 4.9 KB | タイムアウト対策ガイド |
+
+### Data (10件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `properties/index.json` | 299 B | JSON データ |
+| `properties/kasai_rc_603.json` | 2.1 KB | JSON データ |
+| `records/2026/bank_fees_log.csv` | 1.7 KB | CSV データ |
+| `records/2026/books_seminars_log.csv` | 2.9 KB | CSV データ |
+| `records/2026/entertainment_log.csv` | 3.1 KB | CSV データ |
+| `records/2026/supplies_log.csv` | 2.2 KB | CSV データ |
+| `records/2026/transport_log.csv` | 10.8 KB | CSV データ |
+| `state/agents_used.json` | 74 B | JSON データ |
+| `state/error_log.json` | 71 B | JSON データ |
+| `state/session.json` | 73 B | JSON データ |
+
+### Config (1件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `.gitignore` | 247 B | Git 除外設定 |
+
+### Other (3件)
+
+| ファイル | サイズ | 説明 |
+|---|---|---|
+| `knowledge/legal/.gitkeep` | - | ファイル |
+| `knowledge/tech/.gitkeep` | - | ファイル |
+| `outputs/.gitkeep` | - | ファイル |
 
 ---
 
-## 🔖 ファイル更新ルール
-
-1. 新ファイル追加時: 該当セクションに1行追加
-2. ファイル削除・移動時: 該当行を削除または更新
-3. 更新後: `git add FILE_INDEX.md && git commit -m "docs: FILE_INDEX.md更新"`
+_自動生成: 2026-05-02 | 管理者: 男座員也（Kazuya Oza）_
