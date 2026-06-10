@@ -355,3 +355,14 @@ CLAUDE.md内にデータを重複させず、**常に最新のknowledgeファイ
 - **分析・レポートの品質チェック（QC）・レビュー・共有前は必ず** `.claude/skills/analysis-qa-checklist/SKILL.md` を読んでチェックリストを実施する
 - **データ品質・整合性の確認が必要な時は必ず** `.claude/skills/data-quality-audit/SKILL.md` を読んで監査を実行する
 <!-- SKILLS_RULES_END -->
+
+---
+
+## モデル使い分け
+- メイン: **Claude Fable 5（`claude-fable-5`）** を使用。
+  計画・中〜高難易度の実装/分析・全体指揮を担当。
+- 実行フェーズ（定型実装・ファイル編集・テスト実行）:
+  サブエージェントを `model: "sonnet"` で起動して委譲。
+- 軽量大量処理（grep集計・単純変換）: `model: "haiku"` 可。
+- ※難易度ベースの自動メイン切替は不可。Fable の自動切替は安全性ブロック時の
+  Opus 4.8 フォールバックのみ。工程別の使い分けはサブエージェント委譲で行う。
